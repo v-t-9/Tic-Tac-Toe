@@ -1,0 +1,168 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1{
+    font-size: 80px;
+}
+p, #reset{
+    font-size: 40px;
+}
+#reset{
+    padding: 15px 10px;
+    font-family: "Unkempt", serif;
+    background-color: var(--gray);
+    color: var(--dark-violet);
+    border-radius: 20px;
+    border: 5px solid var(--dark-violet);
+}
+body{
+    margin: 0.3em 0;
+    height: 100vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
+    font-size: 6rem;
+    color: var(--dark-violet);
+    font-family: "Unkempt", serif;
+    
+}
+
+#grid{
+    border: 10px solid var(--violet-gray);
+    height: 600px;
+    width:700px;
+    display: grid;
+    grid-template-areas: "zero one two"
+                        "three four five"
+                        "six seven eight";
+}
+.cell{
+    border: 10px solid var(--violet-gray);
+    width: 214px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(100vh - 90vh);
+   
+}
+#zero{
+    grid-area: zero;
+}
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#four{
+    grid-area: four;
+}
+#five{
+    grid-area: five;
+    
+}
+#six{
+    grid-area: six;
+    
+}
+#seven{
+    grid-area: seven;
+    
+}
+#eight{
+    grid-area: eight;
+   
+}
+/*modal*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0; 
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 40vh;
+    
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
